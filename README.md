@@ -1,84 +1,44 @@
-🎧 DeepFake Audio Detection using Acoustic Features
-A machine learning and deep learning based approach to detect deepfake audio using acoustic features like MFCC, Mel-Spectrogram, CQCC, and F0.
+# 🎧  Hybrid Methods for Audio DeepFake Detection Using Spectral and Frequency Features
 
 📌 Overview
-This project focuses on detecting deepfake (AI-generated) audio using various acoustic features and deep learning models. We extract features such as MFCC, Mel-Spectrogram, CQCC, and F0, then apply CNN-based architectures (like VGG16, ResNet50, and MobileNet) and ensemble methods with Stacking Classifier to classify genuine vs fake audio.
+Abstract—The rapid advancement of artificial intelligence and audio generation technologies has raised serious concerns about the spread of deepfake audio. Although several datasets exist for detecting audio deepfakes, high-quality resources for the Vietnamese language remain scarce. To address this gap, we introduce ViAudioDetect v1, a dataset designed for Vietnamese audio deepfake detection. Given Vietnamese’s unique phonetic and tonal characteristics, a dedicated dataset allows models to capture these features better, improving detection accuracy. In contrast, models trained on multilingual datasets often underperform when applied to Vietnamese due to language-specificnuances. We adopt an ensemble learning approach using stacking to enhance performance, which helps reduce individual model errors and improves overall robustness. We evaluate the proposed method using four acoustic features: MFCC, CQCC, F0, and Mel-Spectrogram. Experimental results show that our approach achieves over 90% accuracy on both Vietnamese ViAudioDetect v1 and the English ASVSpoof2021 datasets. These findings highlight the effectiveness of ensemble learning in improving deepfake audio detection, p
 
-🧪 Features Used
-MFCC (Mel Frequency Cepstral Coefficients)
+ ## 🧪 Features Used
+- MFCC (Mel Frequency Cepstral Coefficients)
 
-Mel-Spectrogram
+- Mel-Spectrogram
 
-CQCC (Constant Q Cepstral Coefficients)
+- CQCC (Constant Q Cepstral Coefficients)
 
-F0 (Fundamental Frequency)
+- F0 (Fundamental Frequency)
 
-🧠 Models Applied
-CNN Architectures: VGG16, ResNet50, MobileNet
+## 🧠 Models Applied
 
-Ensemble Learning: Stacking Classifier with Decision Tree as the meta-model
+- Baseling models: SVM, RF, XGB
+  
+- CNN Architectures: CNN, VGG16, ResNet50, MobileNet
 
-Optimization: Genetic Algorithm (GA) for model selection and hyperparameter tuning
+- Ensemble Learning: Stacking Classifier with Decision Tree as the meta-model
 
-🏗️ Architecture
-Preprocessing: Convert audio files into acoustic features
 
-Feature-Specific Modeling: Train a dedicated CNN for each feature type
+## 📁 Source Code Structure
 
-Ensemble: Combine predictions using Stacking Classifier
+public_project_add_marp/
 
-Optimization: Use Genetic Algorithm to optimize model combination
+├── Features Extractor/   # Extracting accoustic features from audio input
 
-📁 Project Structure
-bash
-Sao chép
-Chỉnh sửa
-deepfake-audio-detection/
-├── data/                  # Audio data
-├── features/              # Extracted features
-├── models/                # Saved models
-├── notebooks/             # Jupyter notebooks for EDA and experiments
-├── utils/                 # Feature extraction and training scripts
-├── main.py                # Main pipeline
+├── Tools/                # Ultis functions to help processing.
+
+├── Models/             # Jupyter notebooks for EDA and experiments
+
 ├── requirements.txt       
+
 └── README.md
-🚀 Getting Started
-Clone the repo
-bash
-Sao chép
-Chỉnh sửa
-git clone https://github.com/your-username/deepfake-audio-detection.git
-cd deepfake-audio-detection
-Install dependencies
-bash
-Sao chép
-Chỉnh sửa
-pip install -r requirements.txt
-Run the pipeline
-bash
-Sao chép
-Chỉnh sửa
-python main.py
-🧬 Genetic Algorithm Optimization
-We use GA to:
 
-Select the best CNN model for each feature
+📚 Dataset
+| Datasets          | Link |
+|------------------|------------|
+| ASVSpoof2021  |  [ASVSpoof2021](https://www.asvspoof.org/index2021.html)     |
+|  ViAudioDetect v1| [ViAudioDetectV1](https://drive.google.com/drive/folders/19eDMLPny-oHeR8yubmHe0ct8eV4fvixg?usp=sharing)   |
 
-Optimize stacking weights and meta-model hyperparameters
 
-📊 Results
-Feature	Best Model	Accuracy
-MFCC	VGG16	92.5%
-Mel-Spectrogram	ResNet50	94.1%
-CQCC	MobileNet	91.3%
-F0	VGG16	89.8%
-
-Stacking Ensemble achieves an overall accuracy of 96.4%.
-
-📚 References
-WaveFake: Detecting Fake Speech using Audio Fingerprints
-
-DeepSonar: Towards Effective and Robust Detection of AI-Synthesized Fake Voices
-
-📄 License
-This project is licensed under the MIT License.
