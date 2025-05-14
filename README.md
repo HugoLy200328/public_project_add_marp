@@ -39,6 +39,6 @@ public_project_add_marp/
 | Datasets          | Link |
 |------------------|------------|
 | ASVSpoof2021  |  [ASVSpoof2021](https://www.asvspoof.org/index2021.html)     |
-|  ViAudioDetect v1| [ViAudioDetectV1](https://drive.google.com/drive/folders/19eDMLPny-oHeR8yubmHe0ct8eV4fvixg?usp=sharing)   |
+|  ViAudioDetect v1| [ViAudioDetectV1](https://drive.google.com/file/d/1bBJgSXIdQliAYTxGbnMvkDEYu8mCZN7O/view?usp=sharing)   |
 
 
