@@ -14,7 +14,7 @@ Abstract—The rapid advancement of artificial intelligence and audio generation
 
 ## 🧠 Models Applied
 
-- Baseling models: SVM, RF, XGB
+- Baseling models: SVM, RF, XGB, DT, GNB
   
 - CNN Architectures: CNN, VGG16, ResNet50, MobileNet
 
