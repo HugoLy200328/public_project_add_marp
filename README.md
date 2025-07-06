@@ -40,6 +40,6 @@ public_project_add_marp/
 |------------------|------------|
 | ASVSpoof2021  |  [ASVSpoof2021](https://www.asvspoof.org/index2021.html)     |
 |  ViAudioDetect v1 (Zipped)| [ViAudioDetectV1_zipped](https://drive.google.com/file/d/1bBJgSXIdQliAYTxGbnMvkDEYu8mCZN7O/view?usp=sharing)   |
-|  ViAudioDetect v1 (100 sample)| [ViAudioDetectV1_100_samples].(https://drive.google.com/drive/folders/1pFKvOHvEba5Wi0fqFrHz8rlGLZAESKUk?usp=sharing) |
+|  ViAudioDetect v1 (100 sample)| [ViAudioDetectV1_100_samples](https://drive.google.com/drive/folders/1pFKvOHvEba5Wi0fqFrHz8rlGLZAESKUk?usp=sharing) |
 
 
