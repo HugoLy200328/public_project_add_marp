@@ -42,4 +42,6 @@ public_project_add_marp/
 |  ViAudioDetect v1 (Zipped)| [ViAudioDetectV1_zipped](https://drive.google.com/file/d/1bBJgSXIdQliAYTxGbnMvkDEYu8mCZN7O/view?usp=sharing)   |
 |  ViAudioDetect v1 (100 sample)| [ViAudioDetectV1_100_samples](https://drive.google.com/drive/folders/1pFKvOHvEba5Wi0fqFrHz8rlGLZAESKUk?usp=sharing) |
 
-
+📚 Data
+ VOICE CONVERSION (so-vits-svc): https://drive.google.com/drive/folders/1BvEc1L-Jo1pXKbS3ReuEu7-Roywl5OCh?usp=sharing
+ 
